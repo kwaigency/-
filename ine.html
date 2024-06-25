@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("53F8iKPGv6qB_teUh");
+      })();
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header>Send us a Message</header>
+    <form action="#">
+      <div class="dbl-field">
+        <div class="field">
+          <input id="name" type="text" name="name" placeholder=" أدخل أسمك ">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input id="nationality" type="text" name="email" placeholder="أدخل معرف كواي الخاص بك ">
+          <i class='fas fa-user'></i>
+        </div>
+      </div>
+      <div class="dbl-field">
+        <div class="field">
+          <input id="email" type="number" name="phone" placeholder="أدخل هاتفك ">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="field">
+          <input id="phone" type="text" name="website" placeholder="أدخل جنسيتك ">
+          <i class='fas fa-globe'></i>
+        </div>
+
+      
+      
+      <div class="button-area">
+        <button class="btn btn-primary" onclick="sendMail()">انضم</button>
+       
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
